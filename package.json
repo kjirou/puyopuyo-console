@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "$(npm bin)/babel ./src/index.js | node",
+    "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,14 +19,10 @@
   "homepage": "https://github.com/kjirou/puyopuyo-console#readme",
   "private": true,
   "dependencies": {
-    "ink": "^0.3.0",
-    "react": "^15.6.1"
+    "icepick": "^2.1.1",
+    "ink": "^0.3.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
     "flow-bin": "^0.51.1"
   }
 }
