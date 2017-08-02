@@ -1,0 +1,32 @@
+{
+  "name": "puyopuyo-console",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "$(npm bin)/babel ./src/index.js | node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjirou/puyopuyo-console.git"
+  },
+  "author": "kjirou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjirou/puyopuyo-console/issues"
+  },
+  "homepage": "https://github.com/kjirou/puyopuyo-console#readme",
+  "private": true,
+  "dependencies": {
+    "ink": "^0.3.0",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "flow-bin": "^0.51.1"
+  }
+}
