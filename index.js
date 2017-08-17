@@ -1,9 +1,12 @@
 const {h, render} = require('ink');
 
 const App = require('./lib/App');
+const Store = require('./lib/Store');
 
 
-render(h(App));
+const store = new Store();
+
+render(h(App, {store}));
 
 // keypress
 //   - Ctrl+C と Escape による終了は ink/index.js で定義されている
