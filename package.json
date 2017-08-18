@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kjirou/puyopuyo-console#readme",
   "private": true,
   "dependencies": {
+    "chalk": "^2.1.0",
     "icepick": "^2.1.1",
     "ink": "^0.3.0"
   },
