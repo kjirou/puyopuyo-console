@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "$(npm bin)/mocha --recursive 'lib/**/__tests__/*-test.js'"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "ink": "^0.3.0"
   },
   "devDependencies": {
-    "flow-bin": "^0.51.1"
+    "flow-bin": "^0.51.1",
+    "mocha": "^3.5.0"
   }
 }
