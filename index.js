@@ -1,7 +1,7 @@
 const {h, render} = require('ink');
 
-const App = require('./lib/App');
 const Store = require('./lib/Store');
+const App = require('./lib/components/App');
 
 
 const store = new Store();
