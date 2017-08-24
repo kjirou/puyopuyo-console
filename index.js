@@ -13,12 +13,18 @@ const store = new Store();
 //     - stdin/stdout は render の options で渡せる
 //   - 押しっぱなしでも OS のリピート間隔に従って連打扱いになる
 process.stdin.on('keypress', (ch, key) => {
-  if (key.name === 'right') {
+  if (key.name === 'up') {
+    store.receivePadOperation(PAD_OPERATIONS.UP);
+  } else if (key.name === 'right') {
     store.receivePadOperation(PAD_OPERATIONS.RIGHT);
   } else if (key.name === 'left') {
     store.receivePadOperation(PAD_OPERATIONS.LEFT);
   } else if (key.name === 'down') {
     store.receivePadOperation(PAD_OPERATIONS.DOWN);
+  } else if (key.name === 'z') {
+    store.receivePadOperation(PAD_OPERATIONS.OK);
+  } else if (key.name === 'x') {
+    store.receivePadOperation(PAD_OPERATIONS.CANCEL);
   }
 });
 
