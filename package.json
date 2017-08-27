@@ -20,7 +20,6 @@
   "private": true,
   "dependencies": {
     "chalk": "^2.1.0",
-    "flatten": "^1.0.2",
     "icepick": "^2.1.1",
     "ink": "^0.3.0",
     "match-n-scanner": "^1.0.0"
